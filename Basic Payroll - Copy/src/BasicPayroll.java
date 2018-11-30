@@ -66,32 +66,16 @@ public class BasicPayroll {
 			System.out.print("Enter Last Name: ");
 			iLastName = myScanner.next();
 			
-
+			//prompt, input and convert hours
+			System.out.print("Ener hours");
+			iString = myScanner.next();
+			cHours = Integer.parseInt(iString);
 			
-			try {	//prompt, input and convert hours
-				System.out.print("Ener hours");
-				iString = myScanner.next();
-				cHours = Integer.parseInt(iString);
-					}
-				
-				
-				
-			catch (Exception e) { 
-				System.out.println("hours must be a whole number!!");
-				cHours = 0;
-			};
-			
-			try{	//prompt, input and convert rate
-				System.out.print("Ener rate!");
-				iString = myScanner.next();
-				cRates = Double.parseDouble(iString);
-				}
-				
-			catch(Exception e){ System.out.println("Rate must be a decimal number, defaulted to 0!!");
-			
-				cRates = 0;
-					}
-			}
+			//prompt, input and convert rate
+			System.out.print("Ener rate!");
+			iString = myScanner.next();
+			cRates = Double.parseDouble(iString);
+		}
 		
 		public static void calcs () {
 			//calculates
